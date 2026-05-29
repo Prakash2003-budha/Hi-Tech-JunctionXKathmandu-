@@ -89,6 +89,46 @@ def score_khata_repayment(khata_entries: List[Dict]) -> int:
 
 
 def compute_behavioral_score(merchant: Dict) -> Dict:
+    # New schema path
+    if "layer_3_behavioral" in merchant:
+        L3   = merchant["layer_3_behavioral"]
+        fin  = L3["financial_telemetry_3mo"]
+        prox = L3["proxy_features"]
+
+        avg_coverage  = sum(fin["coverage_ratio"]) / 3
+        tc  = round(min(avg_coverage * 80, 100))
+
+        nea    = prox["nea_bill_consecutive_on_time_months"]
+        water  = prox["water_bill_consecutive_on_time_months"]
+        ofs = round(min((nea + water) / 24 * 100, 100))
+
+        ats = round(prox["airtime_topup_regularity_index"] * 100)
+
+        neg = fin["consecutive_negative_months"]
+        css = round(max(100 - neg * 30, 0))
+
+        krs = 50  # no khata data in new schema
+
+        behavioral_score = round(
+            tc  * 0.35 +
+            ofs * 0.30 +
+            ats * 0.20 +
+            css * 0.15
+        )
+
+        return {
+            "behavioral_score": behavioral_score,
+            "sub_scores": {
+                "transactional_consistency": tc,
+                "obligation_fulfillment":    ofs,
+                "airtime_consistency":       ats,
+                "cash_flow_seasonality":     css,
+                "khata_repayment":           krs,
+            },
+            "has_khata_data": False
+        }
+
+    # Old schema fallback
     tc  = score_transactional_consistency(merchant.get("revenue_history", []))
     ofs = score_obligation_fulfillment(merchant.get("utility_payments", []))
     ats = score_airtime_consistency(merchant.get("airtime_topups", []))
@@ -110,10 +150,10 @@ def compute_behavioral_score(merchant: Dict) -> Dict:
         "behavioral_score": behavioral_score,
         "sub_scores": {
             "transactional_consistency": tc,
-            "obligation_fulfillment": ofs,
-            "airtime_consistency": ats,
-            "cash_flow_seasonality": css,
-            "khata_repayment": krs
+            "obligation_fulfillment":    ofs,
+            "airtime_consistency":       ats,
+            "cash_flow_seasonality":     css,
+            "khata_repayment":           krs,
         },
         "has_khata_data": has_khata
     }

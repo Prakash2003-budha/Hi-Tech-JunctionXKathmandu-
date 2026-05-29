@@ -5,34 +5,33 @@ from typing import Dict, List
 def build_graph(merchants: List[Dict]) -> nx.DiGraph:
     G = nx.DiGraph()
     for m in merchants:
+        meta = m.get("business_metadata", {})
         G.add_node(
             m["merchant_id"],
-            name=m["name"],
-            business_type=m["business_type"],
-            district=m["district"]
+            name=meta.get("owner_name", m["merchant_id"]),
+            business_type=meta.get("business_type", ""),
+            district=meta.get("location", "")
         )
 
-    relationship_weights = {
-        "supplier":        1.0,
-        "peer_merchant":   0.8,
-        "community_elder": 0.6,
-        "family_member":   0.4
-    }
-
     for m in merchants:
-        for v in m.get("vouchers", []):
-            weight = (
-                relationship_weights.get(v["relationship"], 0.5)
-                * (v["voucher_trust_score"] / 100)
-                * min(v["months_known"] / 24, 1.0)
-            )
+        L1 = m.get("layer_1_social_graph", {})
+        vouch_metrics = L1.get("vouch_metrics", {})
+        vouches_given = vouch_metrics.get("vouches_given", 0)
+        vouch_weight  = vouch_metrics.get("vouch_edge_weight", 1.0)
+        fraud_penalty = L1.get("fraud_ring_risk", {}).get("fraud_penalty_multiplier", 1.0)
+
+        # Simulate edges: this merchant vouches for `vouches_given` others
+        # In real data these would be explicit edge records
+        # For now we use the pre-computed pagerank and fraud flags from the data
+        if vouches_given > 0 and fraud_penalty < 1.0:
+            # Fraudster — add self-loop style signal
             G.add_edge(
-                v["voucher_id"],
                 m["merchant_id"],
-                weight=weight,
-                relationship=v["relationship"],
-                months_known=v["months_known"]
+                m["merchant_id"],
+                weight=vouch_weight * 0.1,
+                relationship="self"
             )
+
     return G
 
 
@@ -63,39 +62,61 @@ def compute_pagerank_scores(G: nx.DiGraph) -> Dict[str, float]:
     return scores
 
 
-def score_merchant_social(merchant_id: str, G: nx.DiGraph) -> Dict:
+def score_merchant_social(merchant_id: str, G: nx.DiGraph, merchant_data: Dict = None) -> Dict:
+    # Use pre-computed values from the new schema if available
+    if merchant_data:
+        L1 = merchant_data.get("layer_1_social_graph", {})
+        fraud_flag    = L1.get("fraud_ring_risk", {}).get("is_fraud_ring_participant", False)
+        fraud_penalty = L1.get("fraud_ring_risk", {}).get("fraud_penalty_multiplier", 1.0)
+        pagerank_raw  = L1.get("pagerank_score", 0.0)
+        voucher_count = L1.get("vouch_metrics", {}).get("vouches_received", 0)
+        loyalty       = L1.get("network_relationships", {}).get("calculated_customer_loyalty_score", 0)
+
+        pr_normalized  = min(pagerank_raw * 2000, 100)   # scale 0.01–0.05 → 20–100
+        loyalty_bonus  = loyalty * 20
+        raw_score      = pr_normalized * 0.6 + loyalty_bonus * 0.4
+        final_score    = round(min(raw_score * fraud_penalty, 100))
+
+        return {
+            "social_score":           final_score,
+            "fraud_flag":             fraud_flag,
+            "pagerank_raw":           round(pagerank_raw, 6),
+            "voucher_count":          voucher_count,
+            "relationship_diversity": 1,
+            "explanation": (
+                f"Vouched by {voucher_count} merchants "
+                f"({'FRAUD FLAG' if fraud_flag else 'no fraud detected'}). "
+                f"Loyalty score: {loyalty}."
+            )
+        }
+
+    # Fallback: graph-based scoring (used when no merchant_data passed)
     fraud_rings = detect_fraud_rings(G)
-    fraud_flag = any(merchant_id in ring for ring in fraud_rings)
+    fraud_flag  = any(merchant_id in ring for ring in fraud_rings)
 
     pagerank_scores = compute_pagerank_scores(G)
     pr_raw = pagerank_scores.get(merchant_id, 0.0)
-
     all_scores = list(pagerank_scores.values())
-    if max(all_scores) > 0:
-        pr_normalized = (pr_raw / max(all_scores)) * 100
-    else:
-        pr_normalized = 0
+    pr_normalized = (pr_raw / max(all_scores)) * 100 if max(all_scores) > 0 else 0
 
-    in_edges = list(G.in_edges(merchant_id, data=True))
+    in_edges  = list(G.in_edges(merchant_id, data=True))
     voucher_count = len(in_edges)
     rel_types = set(d.get("relationship") for _, _, d in in_edges)
     diversity_bonus = min(len(rel_types) * 5, 15)
 
-    raw_score = pr_normalized + diversity_bonus
-    fraud_penalty = 0.4 if fraud_flag else 0.0
-    final_score = round(min(raw_score * (1 - fraud_penalty), 100))
-
-    explanation = (
-        f"Vouched by {voucher_count} merchants "
-        f"({'FRAUD FLAG — mutual ring detected' if fraud_flag else 'no fraud detected'}). "
-        f"Relationship diversity: {len(rel_types)} type(s)."
-    )
+    raw_score    = pr_normalized + diversity_bonus
+    fraud_pen    = 0.4 if fraud_flag else 0.0
+    final_score  = round(min(raw_score * (1 - fraud_pen), 100))
 
     return {
-        "social_score": final_score,
-        "fraud_flag": fraud_flag,
-        "pagerank_raw": round(pr_raw, 6),
-        "voucher_count": voucher_count,
+        "social_score":           final_score,
+        "fraud_flag":             fraud_flag,
+        "pagerank_raw":           round(pr_raw, 6),
+        "voucher_count":          voucher_count,
         "relationship_diversity": len(rel_types),
-        "explanation": explanation
+        "explanation": (
+            f"Vouched by {voucher_count} merchants "
+            f"({'FRAUD FLAG' if fraud_flag else 'no fraud detected'}). "
+            f"Relationship diversity: {len(rel_types)} type(s)."
+        )
     }
