@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: trustbridge-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: trustbridge
+      POSTGRES_PASSWORD: trustbridge
+      POSTGRES_DB: trustbridge
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trustbridge -d trustbridge"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: trustbridge-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://trustbridge:trustbridge@db:5432/trustbridge
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: trustbridge-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+
+volumes:
+  pgdata:
+    driver: local

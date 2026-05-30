@@ -107,13 +107,21 @@ def compute_behavioral_score(merchant: Dict) -> Dict:
         neg = fin["consecutive_negative_months"]
         css = round(max(100 - neg * 30, 0))
 
-        krs = 50  # no khata data in new schema
+        # Phase 4 fix: derive khata proxy from payment delay variance
+        delay_variance = prox.get("days_to_payment_variance", 5.0)
+        raw_delays = prox.get("payment_delays_raw_3mo", [])
+        if raw_delays:
+            avg_delay = sum(raw_delays) / len(raw_delays)
+            krs = round(max(100 - avg_delay * 8 - delay_variance * 3, 0))
+        else:
+            krs = round(max(100 - delay_variance * 5, 0))
 
         behavioral_score = round(
-            tc  * 0.35 +
-            ofs * 0.30 +
-            ats * 0.20 +
-            css * 0.15
+            tc  * 0.30 +
+            ofs * 0.28 +
+            ats * 0.18 +
+            css * 0.12 +
+            krs * 0.12
         )
 
         return {

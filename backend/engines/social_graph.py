@@ -10,28 +10,42 @@ def build_graph(merchants: List[Dict]) -> nx.DiGraph:
             m["merchant_id"],
             name=meta.get("owner_name", m["merchant_id"]),
             business_type=meta.get("business_type", ""),
-            district=meta.get("location", "")
+            district=meta.get("location", ""),
+            fraud_flag=m.get("layer_1_social_graph", {}).get("fraud_ring_risk", {}).get("is_fraud_ring_participant", False)
         )
 
+    # Build REAL directed edges from vouch_edges_to field
     for m in merchants:
+        mid = m["merchant_id"]
         L1 = m.get("layer_1_social_graph", {})
-        vouch_metrics = L1.get("vouch_metrics", {})
-        vouches_given = vouch_metrics.get("vouches_given", 0)
-        vouch_weight  = vouch_metrics.get("vouch_edge_weight", 1.0)
-        fraud_penalty = L1.get("fraud_ring_risk", {}).get("fraud_penalty_multiplier", 1.0)
+        vouch_weight = L1.get("vouch_metrics", {}).get("vouch_edge_weight", 1.0)
+        
+        # Real edges from seeded data
+        for target_id in L1.get("vouch_edges_to", []):
+            if target_id in G and target_id != mid:
+                G.add_edge(mid, target_id, weight=vouch_weight, relationship="vouch")
 
-        # Simulate edges: this merchant vouches for `vouches_given` others
-        # In real data these would be explicit edge records
-        # For now we use the pre-computed pagerank and fraud flags from the data
-        if vouches_given > 0 and fraud_penalty < 1.0:
-            # Fraudster — add self-loop style signal
-            G.add_edge(
-                m["merchant_id"],
-                m["merchant_id"],
-                weight=vouch_weight * 0.1,
-                relationship="self"
-            )
+    return G
 
+
+def build_graph_from_edges(merchants: List[Dict], edges: List[Dict]) -> nx.DiGraph:
+    """Build graph using DB edge records."""
+    G = nx.DiGraph()
+    for m in merchants:
+        meta = m.get("business_metadata", {})
+        G.add_node(
+            m["merchant_id"],
+            name=meta.get("owner_name", m["merchant_id"]),
+            business_type=meta.get("business_type", ""),
+            district=meta.get("location", ""),
+            fraud_flag=m.get("layer_1_social_graph", {}).get("fraud_ring_risk", {}).get("is_fraud_ring_participant", False)
+        )
+    for e in edges:
+        src = e.get("source") or e.get("from_merchant_id")
+        tgt = e.get("target") or e.get("to_merchant_id")
+        w = e.get("weight") or e.get("edge_weight", 1.0)
+        if src in G and tgt in G:
+            G.add_edge(src, tgt, weight=w, relationship="vouch")
     return G
 
 
@@ -63,16 +77,19 @@ def compute_pagerank_scores(G: nx.DiGraph) -> Dict[str, float]:
 
 
 def score_merchant_social(merchant_id: str, G: nx.DiGraph, merchant_data: Dict = None) -> Dict:
-    # Use pre-computed values from the new schema if available
+    # Use pre-computed values from the schema if available
     if merchant_data:
         L1 = merchant_data.get("layer_1_social_graph", {})
         fraud_flag    = L1.get("fraud_ring_risk", {}).get("is_fraud_ring_participant", False)
         fraud_penalty = L1.get("fraud_ring_risk", {}).get("fraud_penalty_multiplier", 1.0)
         pagerank_raw  = L1.get("pagerank_score", 0.0)
-        voucher_count = L1.get("vouch_metrics", {}).get("vouches_received", 0)
-        loyalty       = L1.get("network_relationships", {}).get("calculated_customer_loyalty_score", 0)
 
-        pr_normalized  = min(pagerank_raw * 2000, 100)   # scale 0.01–0.05 → 20–100
+        # Count REAL graph edges for this merchant
+        in_edges = list(G.in_edges(merchant_id, data=True)) if merchant_id in G else []
+        voucher_count = len(in_edges)
+        loyalty = L1.get("network_relationships", {}).get("calculated_customer_loyalty_score", 0)
+
+        pr_normalized  = min(pagerank_raw * 2000, 100)
         loyalty_bonus  = loyalty * 20
         raw_score      = pr_normalized * 0.6 + loyalty_bonus * 0.4
         final_score    = round(min(raw_score * fraud_penalty, 100))
@@ -90,7 +107,7 @@ def score_merchant_social(merchant_id: str, G: nx.DiGraph, merchant_data: Dict =
             )
         }
 
-    # Fallback: graph-based scoring (used when no merchant_data passed)
+    # Fallback: graph-based scoring
     fraud_rings = detect_fraud_rings(G)
     fraud_flag  = any(merchant_id in ring for ring in fraud_rings)
 
