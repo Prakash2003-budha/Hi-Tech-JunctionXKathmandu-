@@ -160,7 +160,6 @@ body {
 .badge-orange { background: rgba(255,124,64,0.1); color: var(--orange); }
 .badge-gray   { background: rgba(107,122,148,0.1); color: var(--text-muted); }
 
-/* Main content */
 .main { overflow-y: auto; }
 
 .page-header {
