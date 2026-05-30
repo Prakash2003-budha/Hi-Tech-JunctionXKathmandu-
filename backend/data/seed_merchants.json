@@ -1,0 +1,3805 @@
+[
+  {
+    "merchant_id": "MERCH-2026-0268",
+    "business_metadata": {
+      "legal_name": "Rai Krishi Supplier",
+      "owner_name": "Mina Rai",
+      "location": "Mahendrapool, Pokhara",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 22,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0172,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 2,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 1,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 13
+      },
+      "network_relationships": {
+        "repeat_customers_count": 283,
+        "total_unique_customers_30d": 487,
+        "avg_visits_per_customer_month": 5.8,
+        "longest_relationship_months": 21,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.766
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0746",
+        "MERCH-2026-0024",
+        "MERCH-2026-0038",
+        "MERCH-2026-1049"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 7.3,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 7.5,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 50,
+        "in_group_trust_radius": 48,
+        "time_discounting": 44,
+        "locus_of_control": 59
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 57,
+        "in_group_trust_radius": 51,
+        "time_discounting": 51,
+        "locus_of_control": 52
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3231500,
+          1482096,
+          3987927
+        ],
+        "monthly_debits_npr": [
+          2460082,
+          1157982,
+          3012387
+        ],
+        "net_cash_flow_npr": [
+          771417,
+          324114,
+          975539
+        ],
+        "coverage_ratio": [
+          1.314,
+          1.28,
+          1.324
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 6,
+        "water_bill_consecutive_on_time_months": 4,
+        "airtime_topup_regularity_index": 0.94,
+        "days_to_payment_variance": 2.05,
+        "payment_delays_raw_3mo": [
+          5,
+          3,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 62.1,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 44.4,
+        "psychometric": 52.8,
+        "behavioral": 86.6
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [
+        "MERCH-2026-0306",
+        "MERCH-2026-0367",
+        "MERCH-2026-0466",
+        "MERCH-2026-0473",
+        "MERCH-2026-0558",
+        "MERCH-2026-0579",
+        "MERCH-2026-0634",
+        "MERCH-2026-0665",
+        "MERCH-2026-0907",
+        "MERCH-2026-1036"
+      ],
+      "correlated_risk_flag": true
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-1024",
+    "business_metadata": {
+      "legal_name": "Gurung Momo Center",
+      "owner_name": "Bikram Newar",
+      "location": "Biratnagar",
+      "business_type": "Restaurant & Hospitality",
+      "months_active": 26,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0121,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 6,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 0.5,
+        "vouch_age_months": 23
+      },
+      "network_relationships": {
+        "repeat_customers_count": 44,
+        "total_unique_customers_30d": 211,
+        "avg_visits_per_customer_month": 4.7,
+        "longest_relationship_months": 4,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.438
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0024",
+        "MERCH-2026-0269",
+        "MERCH-2026-0097",
+        "MERCH-2026-1031"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 9.0,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 1.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 73,
+        "in_group_trust_radius": 78,
+        "time_discounting": 64,
+        "locus_of_control": 70
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 78,
+        "in_group_trust_radius": 80,
+        "time_discounting": 69,
+        "locus_of_control": 65
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          558132,
+          224584,
+          413049
+        ],
+        "monthly_debits_npr": [
+          554310,
+          241888,
+          449180
+        ],
+        "net_cash_flow_npr": [
+          3821,
+          -17304,
+          -36131
+        ],
+        "coverage_ratio": [
+          1.007,
+          0.928,
+          0.92
+        ],
+        "consecutive_negative_months": 2,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 0,
+        "water_bill_consecutive_on_time_months": 0,
+        "airtime_topup_regularity_index": 0.42,
+        "days_to_payment_variance": 0.94,
+        "payment_delays_raw_3mo": [
+          20,
+          18,
+          18
+        ],
+        "cross_utility_correlation_stress": true
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 49.4,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 3 \u2014 Conditional / Pilot",
+      "component_scores": {
+        "social": 20.4,
+        "psychometric": 73.0,
+        "behavioral": 50.7
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "medium",
+        "default_probability_band": "0.25-0.55"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0684",
+    "business_metadata": {
+      "legal_name": "Maharjan Krishi Supplier",
+      "owner_name": "Raju Tamang",
+      "location": "Lalitpur",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 41,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0127,
+      "vouch_metrics": {
+        "vouches_given": 3,
+        "vouches_received": 5,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 13
+      },
+      "network_relationships": {
+        "repeat_customers_count": 50,
+        "total_unique_customers_30d": 109,
+        "avg_visits_per_customer_month": 4.0,
+        "longest_relationship_months": 11,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.621
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0823",
+        "MERCH-2026-0889",
+        "MERCH-2026-1024"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 7.5,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 6.9,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 47,
+        "in_group_trust_radius": 66,
+        "time_discounting": 46,
+        "locus_of_control": 50
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 62,
+        "in_group_trust_radius": 73,
+        "time_discounting": 61,
+        "locus_of_control": 35
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1554074,
+          727864,
+          1823550
+        ],
+        "monthly_debits_npr": [
+          1149854,
+          551221,
+          1345925
+        ],
+        "net_cash_flow_npr": [
+          404220,
+          176643,
+          477624
+        ],
+        "coverage_ratio": [
+          1.352,
+          1.32,
+          1.355
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 18,
+        "water_bill_consecutive_on_time_months": 7,
+        "airtime_topup_regularity_index": 0.83,
+        "days_to_payment_variance": 2.05,
+        "payment_delays_raw_3mo": [
+          2,
+          5,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 62.2,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 26.2,
+        "psychometric": 57.8,
+        "behavioral": 97.5
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0038",
+    "business_metadata": {
+      "legal_name": "Pradhan Momo Center",
+      "owner_name": "Sita Newar",
+      "location": "Mahabouddha, Kathmandu",
+      "business_type": "Restaurant & Hospitality",
+      "months_active": 14,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0309,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 0,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 12
+      },
+      "network_relationships": {
+        "repeat_customers_count": 166,
+        "total_unique_customers_30d": 276,
+        "avg_visits_per_customer_month": 5.0,
+        "longest_relationship_months": 12,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.701
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0471",
+        "MERCH-2026-1126",
+        "MERCH-2026-0019",
+        "MERCH-2026-0024"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 8.6,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 4.5,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 88,
+        "in_group_trust_radius": 45,
+        "time_discounting": 48,
+        "locus_of_control": 77
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 83,
+        "in_group_trust_radius": 43,
+        "time_discounting": 43,
+        "locus_of_control": 82
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          4381136,
+          1907642,
+          4798335
+        ],
+        "monthly_debits_npr": [
+          3199845,
+          1660910,
+          4205272
+        ],
+        "net_cash_flow_npr": [
+          1181291,
+          246732,
+          593063
+        ],
+        "coverage_ratio": [
+          1.369,
+          1.149,
+          1.141
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 16,
+        "water_bill_consecutive_on_time_months": 16,
+        "airtime_topup_regularity_index": 0.86,
+        "days_to_payment_variance": 2.05,
+        "payment_delays_raw_3mo": [
+          0,
+          3,
+          5
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 72.1,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 52.8,
+        "psychometric": 62.8,
+        "behavioral": 97.9
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0024",
+    "business_metadata": {
+      "legal_name": "Joshi Krishi Supplier",
+      "owner_name": "Raju Basnet",
+      "location": "Bhaktapur",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 42,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0311,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 7,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 0.1,
+        "vouch_age_months": 37
+      },
+      "network_relationships": {
+        "repeat_customers_count": 200,
+        "total_unique_customers_30d": 381,
+        "avg_visits_per_customer_month": 2.6,
+        "longest_relationship_months": 27,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.657
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-1049",
+        "MERCH-2026-0684",
+        "MERCH-2026-0019",
+        "MERCH-2026-0102"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 5.3,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 3.5,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 81,
+        "in_group_trust_radius": 47,
+        "time_discounting": 46,
+        "locus_of_control": 84
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 89,
+        "in_group_trust_radius": 51,
+        "time_discounting": 54,
+        "locus_of_control": 76
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2221593,
+          959791,
+          2472728
+        ],
+        "monthly_debits_npr": [
+          2123497,
+          1033167,
+          2650152
+        ],
+        "net_cash_flow_npr": [
+          98095,
+          -73375,
+          -177423
+        ],
+        "coverage_ratio": [
+          1.046,
+          0.929,
+          0.933
+        ],
+        "consecutive_negative_months": 2,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 3,
+        "water_bill_consecutive_on_time_months": 2,
+        "airtime_topup_regularity_index": 0.53,
+        "days_to_payment_variance": 0.47,
+        "payment_delays_raw_3mo": [
+          18,
+          19,
+          18
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 64.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 51.2,
+        "psychometric": 67.5,
+        "behavioral": 72.4
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [
+        "MERCH-2026-0207",
+        "MERCH-2026-0273",
+        "MERCH-2026-0575",
+        "MERCH-2026-1155",
+        "MERCH-2026-1169"
+      ],
+      "correlated_risk_flag": true
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0164",
+    "business_metadata": {
+      "legal_name": "Magar Maha Bouddha Wholesalers",
+      "owner_name": "Suresh Pradhan",
+      "location": "Dhangadhi",
+      "business_type": "Electronics & Wholesale",
+      "months_active": 36,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0134,
+      "vouch_metrics": {
+        "vouches_given": 1,
+        "vouches_received": 1,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 0.7,
+        "vouch_age_months": 21
+      },
+      "network_relationships": {
+        "repeat_customers_count": 47,
+        "total_unique_customers_30d": 95,
+        "avg_visits_per_customer_month": 5.7,
+        "longest_relationship_months": 14,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.664
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0068"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 3.0,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 6.5,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 86,
+        "in_group_trust_radius": 65,
+        "time_discounting": 55,
+        "locus_of_control": 63
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 95,
+        "in_group_trust_radius": 69,
+        "time_discounting": 64,
+        "locus_of_control": 54
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          191443,
+          73878,
+          194673
+        ],
+        "monthly_debits_npr": [
+          158477,
+          55715,
+          144911
+        ],
+        "net_cash_flow_npr": [
+          32966,
+          18162,
+          49762
+        ],
+        "coverage_ratio": [
+          1.208,
+          1.326,
+          1.343
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 23,
+        "water_bill_consecutive_on_time_months": 10,
+        "airtime_topup_regularity_index": 0.9,
+        "days_to_payment_variance": 0.0,
+        "payment_delays_raw_3mo": [
+          4,
+          4,
+          4
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 70.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 37.3,
+        "psychometric": 70.5,
+        "behavioral": 98.5
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0295",
+    "business_metadata": {
+      "legal_name": "Lama Momo Center",
+      "owner_name": "Tenzing Thapa",
+      "location": "Asan, Kathmandu",
+      "business_type": "Restaurant & Hospitality",
+      "months_active": 42,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0115,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 2,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 13
+      },
+      "network_relationships": {
+        "repeat_customers_count": 51,
+        "total_unique_customers_30d": 191,
+        "avg_visits_per_customer_month": 3.6,
+        "longest_relationship_months": 13,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.512
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0919",
+        "MERCH-2026-1031",
+        "MERCH-2026-0097",
+        "MERCH-2026-0269"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 9.0,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 1.9,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 57,
+        "in_group_trust_radius": 36,
+        "time_discounting": 59,
+        "locus_of_control": 60
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 54,
+        "in_group_trust_radius": 35,
+        "time_discounting": 56,
+        "locus_of_control": 63
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2687158,
+          1466471,
+          3586957
+        ],
+        "monthly_debits_npr": [
+          2193836,
+          1092264,
+          2641984
+        ],
+        "net_cash_flow_npr": [
+          493322,
+          374206,
+          944972
+        ],
+        "coverage_ratio": [
+          1.225,
+          1.343,
+          1.358
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 24,
+        "water_bill_consecutive_on_time_months": 10,
+        "airtime_topup_regularity_index": 0.85,
+        "days_to_payment_variance": 1.63,
+        "payment_delays_raw_3mo": [
+          4,
+          2,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 61.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 29.7,
+        "psychometric": 52.0,
+        "behavioral": 97.8
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0283",
+    "business_metadata": {
+      "legal_name": "Rai Krishi Supplier",
+      "owner_name": "Bikram Joshi",
+      "location": "Hetauda",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 22,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0272,
+      "vouch_metrics": {
+        "vouches_given": 1,
+        "vouches_received": 6,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 14
+      },
+      "network_relationships": {
+        "repeat_customers_count": 158,
+        "total_unique_customers_30d": 389,
+        "avg_visits_per_customer_month": 2.8,
+        "longest_relationship_months": 21,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.588
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0310"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 8.5,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 4.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 58,
+        "in_group_trust_radius": 69,
+        "time_discounting": 63,
+        "locus_of_control": 50
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 61,
+        "in_group_trust_radius": 70,
+        "time_discounting": 66,
+        "locus_of_control": 47
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3348114,
+          1613417,
+          4151158
+        ],
+        "monthly_debits_npr": [
+          2510497,
+          1187290,
+          3438723
+        ],
+        "net_cash_flow_npr": [
+          837617,
+          426127,
+          712435
+        ],
+        "coverage_ratio": [
+          1.334,
+          1.359,
+          1.207
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 15,
+        "water_bill_consecutive_on_time_months": 9,
+        "airtime_topup_regularity_index": 0.84,
+        "days_to_payment_variance": 2.36,
+        "payment_delays_raw_3mo": [
+          0,
+          5,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 69.1,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 45.3,
+        "psychometric": 61.0,
+        "behavioral": 97.6
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0619",
+    "business_metadata": {
+      "legal_name": "Lama Maha Bouddha Wholesalers",
+      "owner_name": "Niranjan Poudel",
+      "location": "Butwal",
+      "business_type": "Electronics & Wholesale",
+      "months_active": 36,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0291,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 2,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 15
+      },
+      "network_relationships": {
+        "repeat_customers_count": 212,
+        "total_unique_customers_30d": 456,
+        "avg_visits_per_customer_month": 1.7,
+        "longest_relationship_months": 33,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.56
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0295",
+        "MERCH-2026-0576",
+        "MERCH-2026-0684",
+        "MERCH-2026-1024"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 5.1,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 7.6,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 63,
+        "in_group_trust_radius": 43,
+        "time_discounting": 75,
+        "locus_of_control": 72
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 66,
+        "in_group_trust_radius": 44,
+        "time_discounting": 78,
+        "locus_of_control": 69
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2303510,
+          1336195,
+          3495999
+        ],
+        "monthly_debits_npr": [
+          1667534,
+          1091811,
+          2706178
+        ],
+        "net_cash_flow_npr": [
+          635976,
+          244383,
+          789820
+        ],
+        "coverage_ratio": [
+          1.381,
+          1.224,
+          1.292
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 20,
+        "water_bill_consecutive_on_time_months": 14,
+        "airtime_topup_regularity_index": 0.91,
+        "days_to_payment_variance": 1.41,
+        "payment_delays_raw_3mo": [
+          0,
+          3,
+          3
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 67.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 34.3,
+        "psychometric": 64.2,
+        "behavioral": 98.7
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0823",
+    "business_metadata": {
+      "legal_name": "Maharjan Momo Center",
+      "owner_name": "Binita Magar",
+      "location": "Mahendrapool, Pokhara",
+      "business_type": "Restaurant & Hospitality",
+      "months_active": 26,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0157,
+      "vouch_metrics": {
+        "vouches_given": 3,
+        "vouches_received": 1,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 1,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 9
+      },
+      "network_relationships": {
+        "repeat_customers_count": 198,
+        "total_unique_customers_30d": 454,
+        "avg_visits_per_customer_month": 2.2,
+        "longest_relationship_months": 20,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.55
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0462",
+        "MERCH-2026-0283",
+        "MERCH-2026-0548"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 6.5,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 24.1,
+        "consistency_trap_failed": true
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 90,
+        "in_group_trust_radius": 78,
+        "time_discounting": 68,
+        "locus_of_control": 70
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 91,
+        "in_group_trust_radius": 78,
+        "time_discounting": 69,
+        "locus_of_control": 69
+      },
+      "llm_explanation": "Consistency trap triggered \u2014 reliability weight reduced."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "recovery",
+      "historical_regime_transitions": [
+        "stable",
+        "recovery"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2431735,
+          1168970,
+          2833666
+        ],
+        "monthly_debits_npr": [
+          2217435,
+          1042626,
+          2425275
+        ],
+        "net_cash_flow_npr": [
+          214300,
+          126344,
+          408391
+        ],
+        "coverage_ratio": [
+          1.097,
+          1.121,
+          1.168
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 6,
+        "water_bill_consecutive_on_time_months": 3,
+        "airtime_topup_regularity_index": 0.68,
+        "days_to_payment_variance": 1.25,
+        "payment_delays_raw_3mo": [
+          6,
+          7,
+          9
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 68.7,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 25.9,
+        "psychometric": 65.2,
+        "behavioral": 82.7
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0102",
+    "business_metadata": {
+      "legal_name": "Thapa Kapada Udhyog",
+      "owner_name": "Tenzing Shrestha",
+      "location": "Biratnagar",
+      "business_type": "Textiles & Apparel",
+      "months_active": 19,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0342,
+      "vouch_metrics": {
+        "vouches_given": 1,
+        "vouches_received": 4,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 0,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 9
+      },
+      "network_relationships": {
+        "repeat_customers_count": 71,
+        "total_unique_customers_30d": 452,
+        "avg_visits_per_customer_month": 3.8,
+        "longest_relationship_months": 18,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.514
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0823"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 2.4,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 3.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 61,
+        "in_group_trust_radius": 65,
+        "time_discounting": 51,
+        "locus_of_control": 63
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 57,
+        "in_group_trust_radius": 63,
+        "time_discounting": 47,
+        "locus_of_control": 67
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2491787,
+          1578043,
+          2746565
+        ],
+        "monthly_debits_npr": [
+          2057305,
+          1137294,
+          2336162
+        ],
+        "net_cash_flow_npr": [
+          434482,
+          440748,
+          410403
+        ],
+        "coverage_ratio": [
+          1.211,
+          1.388,
+          1.176
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 23,
+        "water_bill_consecutive_on_time_months": 15,
+        "airtime_topup_regularity_index": 0.92,
+        "days_to_payment_variance": 1.7,
+        "payment_delays_raw_3mo": [
+          4,
+          0,
+          1
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 82.6,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 47.9,
+        "psychometric": 58.5,
+        "behavioral": 98.8
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [
+        "MERCH-2026-0160",
+        "MERCH-2026-0299",
+        "MERCH-2026-0361",
+        "MERCH-2026-0415",
+        "MERCH-2026-0435",
+        "MERCH-2026-0541",
+        "MERCH-2026-0542",
+        "MERCH-2026-0679",
+        "MERCH-2026-0688",
+        "MERCH-2026-0714"
+      ],
+      "correlated_risk_flag": true
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0746",
+    "business_metadata": {
+      "legal_name": "Rai Tarkari Pasala",
+      "owner_name": "Tenzing Poudel",
+      "location": "Lalitpur",
+      "business_type": "Vegetable & Seasonal Produce",
+      "months_active": 12,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.026,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 5,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 0
+      },
+      "network_relationships": {
+        "repeat_customers_count": 137,
+        "total_unique_customers_30d": 485,
+        "avg_visits_per_customer_month": 2.3,
+        "longest_relationship_months": 11,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.405
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0684",
+        "MERCH-2026-0097",
+        "MERCH-2026-0283",
+        "MERCH-2026-0038"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 5.8,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 5.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 87,
+        "in_group_trust_radius": 60,
+        "time_discounting": 78,
+        "locus_of_control": 90
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 94,
+        "in_group_trust_radius": 63,
+        "time_discounting": 85,
+        "locus_of_control": 83
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2012690,
+          1107395,
+          2800469
+        ],
+        "monthly_debits_npr": [
+          1616953,
+          917594,
+          2382133
+        ],
+        "net_cash_flow_npr": [
+          395737,
+          189801,
+          418335
+        ],
+        "coverage_ratio": [
+          1.245,
+          1.207,
+          1.176
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 9,
+        "water_bill_consecutive_on_time_months": 11,
+        "airtime_topup_regularity_index": 0.86,
+        "days_to_payment_variance": 0.94,
+        "payment_delays_raw_3mo": [
+          2,
+          0,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 77.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 27.8,
+        "psychometric": 81.2,
+        "behavioral": 91.7
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0269",
+    "business_metadata": {
+      "legal_name": "Adhikari Krishi Supplier",
+      "owner_name": "Parbati Tamang",
+      "location": "Mahabouddha, Kathmandu",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 20,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0345,
+      "vouch_metrics": {
+        "vouches_given": 4,
+        "vouches_received": 7,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 1,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 11
+      },
+      "network_relationships": {
+        "repeat_customers_count": 266,
+        "total_unique_customers_30d": 464,
+        "avg_visits_per_customer_month": 2.6,
+        "longest_relationship_months": 9,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.557
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-1049",
+        "MERCH-2026-0619",
+        "MERCH-2026-1126",
+        "MERCH-2026-0919"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 8.6,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 1.9,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 68,
+        "in_group_trust_radius": 37,
+        "time_discounting": 58,
+        "locus_of_control": 81
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 66,
+        "in_group_trust_radius": 36,
+        "time_discounting": 56,
+        "locus_of_control": 83
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3872907,
+          1585159,
+          4043215
+        ],
+        "monthly_debits_npr": [
+          3134426,
+          1168190,
+          3524602
+        ],
+        "net_cash_flow_npr": [
+          738480,
+          416968,
+          518612
+        ],
+        "coverage_ratio": [
+          1.236,
+          1.357,
+          1.147
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 10,
+        "water_bill_consecutive_on_time_months": 6,
+        "airtime_topup_regularity_index": 0.92,
+        "days_to_payment_variance": 1.7,
+        "payment_delays_raw_3mo": [
+          5,
+          4,
+          1
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 80.5,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 49.9,
+        "psychometric": 60.2,
+        "behavioral": 94.6
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-1049",
+    "business_metadata": {
+      "legal_name": "Newar Photo Studio",
+      "owner_name": "Dolma Gurung",
+      "location": "Bhaktapur",
+      "business_type": "Seasonal Photography",
+      "months_active": 17,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0297,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 7,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 0,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 2
+      },
+      "network_relationships": {
+        "repeat_customers_count": 72,
+        "total_unique_customers_30d": 192,
+        "avg_visits_per_customer_month": 3.4,
+        "longest_relationship_months": 16,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.576
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0068",
+        "MERCH-2026-0746",
+        "MERCH-2026-0164",
+        "MERCH-2026-0295"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 4.2,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 7.5,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 74,
+        "in_group_trust_radius": 85,
+        "time_discounting": 42,
+        "locus_of_control": 71
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 65,
+        "in_group_trust_radius": 81,
+        "time_discounting": 33,
+        "locus_of_control": 80
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": true,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3691898,
+          1558570,
+          3618113
+        ],
+        "monthly_debits_npr": [
+          2674932,
+          1164361,
+          3056658
+        ],
+        "net_cash_flow_npr": [
+          1016965,
+          394209,
+          561455
+        ],
+        "coverage_ratio": [
+          1.38,
+          1.339,
+          1.184
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 13,
+        "water_bill_consecutive_on_time_months": 9,
+        "airtime_topup_regularity_index": 0.86,
+        "days_to_payment_variance": 1.89,
+        "payment_delays_raw_3mo": [
+          0,
+          0,
+          4
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 80.4,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 35.1,
+        "psychometric": 64.8,
+        "behavioral": 97.9
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0485",
+    "business_metadata": {
+      "legal_name": "Gurung Tarkari Pasala",
+      "owner_name": "Subash Thapa",
+      "location": "Dhangadhi",
+      "business_type": "Vegetable & Seasonal Produce",
+      "months_active": 31,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0248,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 5,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 0.4,
+        "vouch_age_months": 24
+      },
+      "network_relationships": {
+        "repeat_customers_count": 164,
+        "total_unique_customers_30d": 370,
+        "avg_visits_per_customer_month": 1.2,
+        "longest_relationship_months": 30,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.512
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0462",
+        "MERCH-2026-0619",
+        "MERCH-2026-0576",
+        "MERCH-2026-0919"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 2.1,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 7.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 89,
+        "in_group_trust_radius": 74,
+        "time_discounting": 64,
+        "locus_of_control": 60
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 75,
+        "in_group_trust_radius": 67,
+        "time_discounting": 50,
+        "locus_of_control": 74
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2911362,
+          1418429,
+          3971533
+        ],
+        "monthly_debits_npr": [
+          2164709,
+          1247232,
+          3098184
+        ],
+        "net_cash_flow_npr": [
+          746652,
+          171196,
+          873349
+        ],
+        "coverage_ratio": [
+          1.345,
+          1.137,
+          1.282
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 22,
+        "water_bill_consecutive_on_time_months": 11,
+        "airtime_topup_regularity_index": 0.85,
+        "days_to_payment_variance": 2.16,
+        "payment_delays_raw_3mo": [
+          4,
+          0,
+          5
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 79.6,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 30.2,
+        "psychometric": 66.5,
+        "behavioral": 97.8
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-1126",
+    "business_metadata": {
+      "legal_name": "Shrestha Kirana Pasala",
+      "owner_name": "Anjali Gurung",
+      "location": "Asan, Kathmandu",
+      "business_type": "Grocery & Daily Essentials",
+      "months_active": 44,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0316,
+      "vouch_metrics": {
+        "vouches_given": 2,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 0.1,
+        "vouch_age_months": 32
+      },
+      "network_relationships": {
+        "repeat_customers_count": 154,
+        "total_unique_customers_30d": 339,
+        "avg_visits_per_customer_month": 5.2,
+        "longest_relationship_months": 15,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.652
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0684",
+        "MERCH-2026-1031"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 7.6,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 3.9,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 49,
+        "in_group_trust_radius": 73,
+        "time_discounting": 46,
+        "locus_of_control": 63
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 56,
+        "in_group_trust_radius": 76,
+        "time_discounting": 53,
+        "locus_of_control": 56
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1563480,
+          855621,
+          2187349
+        ],
+        "monthly_debits_npr": [
+          1632405,
+          955116,
+          2187098
+        ],
+        "net_cash_flow_npr": [
+          -68924,
+          -99495,
+          251
+        ],
+        "coverage_ratio": [
+          0.958,
+          0.896,
+          1.0
+        ],
+        "consecutive_negative_months": 2,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 2,
+        "water_bill_consecutive_on_time_months": 0,
+        "airtime_topup_regularity_index": 0.51,
+        "days_to_payment_variance": 2.49,
+        "payment_delays_raw_3mo": [
+          12,
+          16,
+          10
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 61.5,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 38.5,
+        "psychometric": 60.2,
+        "behavioral": 68.9
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0795",
+    "business_metadata": {
+      "legal_name": "Adhikari Tarkari Pasala",
+      "owner_name": "Raju Maharjan",
+      "location": "Hetauda",
+      "business_type": "Vegetable & Seasonal Produce",
+      "months_active": 28,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0348,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 8,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 3
+      },
+      "network_relationships": {
+        "repeat_customers_count": 98,
+        "total_unique_customers_30d": 406,
+        "avg_visits_per_customer_month": 4.1,
+        "longest_relationship_months": 12,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.521
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0919",
+        "MERCH-2026-0164",
+        "MERCH-2026-0019",
+        "MERCH-2026-0471"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 1.8,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 15.1,
+        "consistency_trap_failed": true
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 87,
+        "in_group_trust_radius": 39,
+        "time_discounting": 56,
+        "locus_of_control": 60
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 80,
+        "in_group_trust_radius": 36,
+        "time_discounting": 49,
+        "locus_of_control": 67
+      },
+      "llm_explanation": "Consistency trap triggered \u2014 reliability weight reduced."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "recovery",
+      "historical_regime_transitions": [
+        "stable",
+        "recovery"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2816474,
+          1149706,
+          3343198
+        ],
+        "monthly_debits_npr": [
+          2614367,
+          973932,
+          3010866
+        ],
+        "net_cash_flow_npr": [
+          202106,
+          175773,
+          332331
+        ],
+        "coverage_ratio": [
+          1.077,
+          1.18,
+          1.11
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 5,
+        "water_bill_consecutive_on_time_months": 1,
+        "airtime_topup_regularity_index": 0.71,
+        "days_to_payment_variance": 1.89,
+        "payment_delays_raw_3mo": [
+          6,
+          10,
+          10
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 67.4,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 36.5,
+        "psychometric": 49.3,
+        "behavioral": 81.1
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "low",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0486",
+    "business_metadata": {
+      "legal_name": "Maharjan Kapada Udhyog",
+      "owner_name": "Sita Basnet",
+      "location": "Butwal",
+      "business_type": "Textiles & Apparel",
+      "months_active": 27,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0196,
+      "vouch_metrics": {
+        "vouches_given": 5,
+        "vouches_received": 5,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 1,
+        "vouch_edge_weight": 0.1,
+        "vouch_age_months": 27
+      },
+      "network_relationships": {
+        "repeat_customers_count": 121,
+        "total_unique_customers_30d": 433,
+        "avg_visits_per_customer_month": 3.4,
+        "longest_relationship_months": 4,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.428
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0283",
+        "MERCH-2026-0164",
+        "MERCH-2026-0485",
+        "MERCH-2026-0269"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 2.9,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 5.6,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 74,
+        "in_group_trust_radius": 47,
+        "time_discounting": 44,
+        "locus_of_control": 67
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 60,
+        "in_group_trust_radius": 40,
+        "time_discounting": 30,
+        "locus_of_control": 81
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3180888,
+          1145042,
+          3055096
+        ],
+        "monthly_debits_npr": [
+          3170167,
+          1113099,
+          3153499
+        ],
+        "net_cash_flow_npr": [
+          10721,
+          31943,
+          -98402
+        ],
+        "coverage_ratio": [
+          1.003,
+          1.029,
+          0.969
+        ],
+        "consecutive_negative_months": 1,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 1,
+        "water_bill_consecutive_on_time_months": 1,
+        "airtime_topup_regularity_index": 0.26,
+        "days_to_payment_variance": 4.03,
+        "payment_delays_raw_3mo": [
+          8,
+          17,
+          9
+        ],
+        "cross_utility_correlation_stress": true
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 47.1,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 3 \u2014 Conditional / Pilot",
+      "component_scores": {
+        "social": 24.6,
+        "psychometric": 52.8,
+        "behavioral": 52.8
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "medium",
+        "default_probability_band": "0.25-0.55"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0019",
+    "business_metadata": {
+      "legal_name": "Lama Kapada Udhyog",
+      "owner_name": "Anjali Pradhan",
+      "location": "Mahendrapool, Pokhara",
+      "business_type": "Textiles & Apparel",
+      "months_active": 2,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.67
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0106,
+      "vouch_metrics": {
+        "vouches_given": 2,
+        "vouches_received": 2,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 0,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 0
+      },
+      "network_relationships": {
+        "repeat_customers_count": 25,
+        "total_unique_customers_30d": 49,
+        "avg_visits_per_customer_month": 3.1,
+        "longest_relationship_months": 1,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.496
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0619",
+        "MERCH-2026-0919"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 2.7,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 3.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 62,
+        "in_group_trust_radius": 53,
+        "time_discounting": 70,
+        "locus_of_control": 57
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 52,
+        "in_group_trust_radius": 48,
+        "time_discounting": 60,
+        "locus_of_control": 67
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1685915,
+          846801,
+          2640438
+        ],
+        "monthly_debits_npr": [
+          1623973,
+          908012,
+          2518930
+        ],
+        "net_cash_flow_npr": [
+          61942,
+          -61211,
+          121508
+        ],
+        "coverage_ratio": [
+          1.038,
+          0.933,
+          1.048
+        ],
+        "consecutive_negative_months": 1,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 1,
+        "water_bill_consecutive_on_time_months": 0,
+        "airtime_topup_regularity_index": 0.26,
+        "days_to_payment_variance": 0.94,
+        "payment_delays_raw_3mo": [
+          9,
+          7,
+          9
+        ],
+        "cross_utility_correlation_stress": true
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 30,
+      "score_band_plus_minus": 5.6,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 28.3,
+        "psychometric": 56.8,
+        "behavioral": 52.8
+      },
+      "confidence_multiplier": 0.67,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [
+        "MERCH-2026-0121",
+        "MERCH-2026-0237",
+        "MERCH-2026-0313",
+        "MERCH-2026-0610",
+        "MERCH-2026-0833",
+        "MERCH-2026-0910",
+        "MERCH-2026-0923"
+      ],
+      "correlated_risk_flag": true
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0310",
+    "business_metadata": {
+      "legal_name": "Karki Photo Studio",
+      "owner_name": "Raju Rai",
+      "location": "Biratnagar",
+      "business_type": "Seasonal Photography",
+      "months_active": 3,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.7
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0261,
+      "vouch_metrics": {
+        "vouches_given": 0,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 3
+      },
+      "network_relationships": {
+        "repeat_customers_count": 12,
+        "total_unique_customers_30d": 58,
+        "avg_visits_per_customer_month": 4.0,
+        "longest_relationship_months": 2,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.42
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 1.0,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": []
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 6.9,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 5.8,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 53,
+        "in_group_trust_radius": 80,
+        "time_discounting": 65,
+        "locus_of_control": 78
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 58,
+        "in_group_trust_radius": 82,
+        "time_discounting": 70,
+        "locus_of_control": 73
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": true,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2608210,
+          1448204,
+          140531
+        ],
+        "monthly_debits_npr": [
+          1976378,
+          1092869,
+          149861
+        ],
+        "net_cash_flow_npr": [
+          631831,
+          355334,
+          -9329
+        ],
+        "coverage_ratio": [
+          1.32,
+          1.325,
+          0.938
+        ],
+        "consecutive_negative_months": 1,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 11,
+        "water_bill_consecutive_on_time_months": 8,
+        "airtime_topup_regularity_index": 0.81,
+        "days_to_payment_variance": 0.94,
+        "payment_delays_raw_3mo": [
+          3,
+          1,
+          1
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 42.8,
+      "score_band_plus_minus": 5.4,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 3 \u2014 Conditional / Pilot",
+      "component_scores": {
+        "social": 37.7,
+        "psychometric": 70.8,
+        "behavioral": 95.1
+      },
+      "confidence_multiplier": 0.7,
+      "ml_label": {
+        "repayment_risk": "medium",
+        "default_probability_band": "0.25-0.55"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-1031",
+    "business_metadata": {
+      "legal_name": "Poudel Photo Studio",
+      "owner_name": "Suresh Poudel",
+      "location": "Lalitpur",
+      "business_type": "Seasonal Photography",
+      "months_active": 5,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.77
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0202,
+      "vouch_metrics": {
+        "vouches_given": 2,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 0,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 1
+      },
+      "network_relationships": {
+        "repeat_customers_count": 10,
+        "total_unique_customers_30d": 19,
+        "avg_visits_per_customer_month": 3.2,
+        "longest_relationship_months": 4,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.536
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0576",
+        "MERCH-2026-0486"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 4.8,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 2.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 90,
+        "in_group_trust_radius": 39,
+        "time_discounting": 79,
+        "locus_of_control": 90
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 98,
+        "in_group_trust_radius": 43,
+        "time_discounting": 87,
+        "locus_of_control": 82
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": true,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          61688,
+          27360,
+          1152077
+        ],
+        "monthly_debits_npr": [
+          60286,
+          26713,
+          874854
+        ],
+        "net_cash_flow_npr": [
+          1402,
+          647,
+          277222
+        ],
+        "coverage_ratio": [
+          1.023,
+          1.024,
+          1.317
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 24,
+        "water_bill_consecutive_on_time_months": 13,
+        "airtime_topup_regularity_index": 0.8,
+        "days_to_payment_variance": 1.25,
+        "payment_delays_raw_3mo": [
+          2,
+          5,
+          4
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 46.7,
+      "score_band_plus_minus": 4.8,
+      "score_status": "scored",
+      "lending_tier": "Tier 3 \u2014 Conditional / Pilot",
+      "component_scores": {
+        "social": 28.2,
+        "psychometric": 77.5,
+        "behavioral": 97.0
+      },
+      "confidence_multiplier": 0.77,
+      "ml_label": {
+        "repayment_risk": "medium",
+        "default_probability_band": "0.25-0.55"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0919",
+    "business_metadata": {
+      "legal_name": "Pradhan Chiya Pasal",
+      "owner_name": "Niranjan Thapa",
+      "location": "Mahabouddha, Kathmandu",
+      "business_type": "Tea & Local Eatery",
+      "months_active": 3,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.7
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0192,
+      "vouch_metrics": {
+        "vouches_given": 0,
+        "vouches_received": 0,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 2
+      },
+      "network_relationships": {
+        "repeat_customers_count": 30,
+        "total_unique_customers_30d": 52,
+        "avg_visits_per_customer_month": 2.8,
+        "longest_relationship_months": 2,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.515
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": []
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 2.2,
+        "response_time_signal": "impulsive",
+        "multi_session_score_drift_2w": 7.6,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 80,
+        "in_group_trust_radius": 85,
+        "time_discounting": 51,
+        "locus_of_control": 72
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 72,
+        "in_group_trust_radius": 81,
+        "time_discounting": 43,
+        "locus_of_control": 80
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1934820,
+          865480,
+          1846748
+        ],
+        "monthly_debits_npr": [
+          1570662,
+          698981,
+          1407605
+        ],
+        "net_cash_flow_npr": [
+          364158,
+          166498,
+          439143
+        ],
+        "coverage_ratio": [
+          1.232,
+          1.238,
+          1.312
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 6,
+        "water_bill_consecutive_on_time_months": 4,
+        "airtime_topup_regularity_index": 0.89,
+        "days_to_payment_variance": 0.47,
+        "payment_delays_raw_3mo": [
+          4,
+          5,
+          4
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 38.3,
+      "score_band_plus_minus": 5.4,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 27.0,
+        "psychometric": 69.0,
+        "behavioral": 85.8
+      },
+      "confidence_multiplier": 0.7,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0462",
+    "business_metadata": {
+      "legal_name": "Thapa Krishi Supplier",
+      "owner_name": "Anjali Maharjan",
+      "location": "Bhaktapur",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 3,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.7
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0288,
+      "vouch_metrics": {
+        "vouches_given": 0,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 2
+      },
+      "network_relationships": {
+        "repeat_customers_count": 5,
+        "total_unique_customers_30d": 16,
+        "avg_visits_per_customer_month": 4.6,
+        "longest_relationship_months": 2,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.473
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": []
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 3.2,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 4.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 69,
+        "in_group_trust_radius": 57,
+        "time_discounting": 50,
+        "locus_of_control": 84
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 60,
+        "in_group_trust_radius": 53,
+        "time_discounting": 41,
+        "locus_of_control": 93
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1139142,
+          567111,
+          1327877
+        ],
+        "monthly_debits_npr": [
+          955273,
+          423128,
+          1056381
+        ],
+        "net_cash_flow_npr": [
+          183869,
+          143982,
+          271496
+        ],
+        "coverage_ratio": [
+          1.192,
+          1.34,
+          1.257
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 15,
+        "water_bill_consecutive_on_time_months": 12,
+        "airtime_topup_regularity_index": 0.93,
+        "days_to_payment_variance": 1.63,
+        "payment_delays_raw_3mo": [
+          5,
+          1,
+          3
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 38.7,
+      "score_band_plus_minus": 5.4,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 31.5,
+        "psychometric": 61.8,
+        "behavioral": 99.0
+      },
+      "confidence_multiplier": 0.7,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0576",
+    "business_metadata": {
+      "legal_name": "Pradhan Kapada Udhyog",
+      "owner_name": "Dolma Newar",
+      "location": "Dhangadhi",
+      "business_type": "Textiles & Apparel",
+      "months_active": 6,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.8
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0214,
+      "vouch_metrics": {
+        "vouches_given": 1,
+        "vouches_received": 1,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 0
+      },
+      "network_relationships": {
+        "repeat_customers_count": 8,
+        "total_unique_customers_30d": 34,
+        "avg_visits_per_customer_month": 5.6,
+        "longest_relationship_months": 5,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.459
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0283"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 5.8,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 1.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 63,
+        "in_group_trust_radius": 58,
+        "time_discounting": 79,
+        "locus_of_control": 74
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 73,
+        "in_group_trust_radius": 63,
+        "time_discounting": 89,
+        "locus_of_control": 64
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1556096,
+          617381,
+          1816629
+        ],
+        "monthly_debits_npr": [
+          1331848,
+          491226,
+          1471324
+        ],
+        "net_cash_flow_npr": [
+          224248,
+          126154,
+          345304
+        ],
+        "coverage_ratio": [
+          1.168,
+          1.257,
+          1.235
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 21,
+        "water_bill_consecutive_on_time_months": 16,
+        "airtime_topup_regularity_index": 0.87,
+        "days_to_payment_variance": 1.63,
+        "payment_delays_raw_3mo": [
+          4,
+          0,
+          2
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 46.3,
+      "score_band_plus_minus": 4.6,
+      "score_status": "scored",
+      "lending_tier": "Tier 3 \u2014 Conditional / Pilot",
+      "component_scores": {
+        "social": 26.6,
+        "psychometric": 72.2,
+        "behavioral": 98.0
+      },
+      "confidence_multiplier": 0.8,
+      "ml_label": {
+        "repayment_risk": "medium",
+        "default_probability_band": "0.25-0.55"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0471",
+    "business_metadata": {
+      "legal_name": "Rai Photo Studio",
+      "owner_name": "Dolma Thapa",
+      "location": "Asan, Kathmandu",
+      "business_type": "Seasonal Photography",
+      "months_active": 3,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.7
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0267,
+      "vouch_metrics": {
+        "vouches_given": 1,
+        "vouches_received": 2,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 2,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 1
+      },
+      "network_relationships": {
+        "repeat_customers_count": 15,
+        "total_unique_customers_30d": 38,
+        "avg_visits_per_customer_month": 1.3,
+        "longest_relationship_months": 2,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.312
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0919"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 8.0,
+        "response_time_signal": "deliberate",
+        "multi_session_score_drift_2w": 6.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 54,
+        "in_group_trust_radius": 77,
+        "time_discounting": 59,
+        "locus_of_control": 60
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 54,
+        "in_group_trust_radius": 77,
+        "time_discounting": 59,
+        "locus_of_control": 60
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": true,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          4469056,
+          2008596,
+          132166
+        ],
+        "monthly_debits_npr": [
+          3914999,
+          1735950,
+          128693
+        ],
+        "net_cash_flow_npr": [
+          554057,
+          272646,
+          3472
+        ],
+        "coverage_ratio": [
+          1.142,
+          1.157,
+          1.027
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 7,
+        "water_bill_consecutive_on_time_months": 8,
+        "airtime_topup_regularity_index": 0.88,
+        "days_to_payment_variance": 1.89,
+        "payment_delays_raw_3mo": [
+          5,
+          5,
+          1
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 36.0,
+      "score_band_plus_minus": 5.4,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 25.4,
+        "psychometric": 62.5,
+        "behavioral": 87.8
+      },
+      "confidence_multiplier": 0.7,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0548",
+    "business_metadata": {
+      "legal_name": "Rai Chiya Pasal",
+      "owner_name": "Raju Thapa",
+      "location": "Hetauda",
+      "business_type": "Tea & Local Eatery",
+      "months_active": 3,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.7
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0239,
+      "vouch_metrics": {
+        "vouches_given": 2,
+        "vouches_received": 3,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 3,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 2
+      },
+      "network_relationships": {
+        "repeat_customers_count": 3,
+        "total_unique_customers_30d": 12,
+        "avg_visits_per_customer_month": 1.5,
+        "longest_relationship_months": 2,
+        "supplier_buyer_loop_detected": false,
+        "temporal_clustering_flag": false,
+        "calculated_customer_loyalty_score": 0.254
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": false,
+        "fraud_penalty_multiplier": 0.75,
+        "temporal_vouching_burst": false
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0102",
+        "MERCH-2026-0068"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 4.1,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 7.1,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 60,
+        "in_group_trust_radius": 72,
+        "time_discounting": 51,
+        "locus_of_control": 62
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 69,
+        "in_group_trust_radius": 76,
+        "time_discounting": 60,
+        "locus_of_control": 53
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          1052005,
+          573097,
+          1573388
+        ],
+        "monthly_debits_npr": [
+          1125902,
+          571955,
+          1638658
+        ],
+        "net_cash_flow_npr": [
+          -73896,
+          1141,
+          -65269
+        ],
+        "coverage_ratio": [
+          0.934,
+          1.002,
+          0.96
+        ],
+        "consecutive_negative_months": 1,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 0,
+        "water_bill_consecutive_on_time_months": 0,
+        "airtime_topup_regularity_index": 0.32,
+        "days_to_payment_variance": 5.79,
+        "payment_delays_raw_3mo": [
+          19,
+          5,
+          10
+        ],
+        "cross_utility_correlation_stress": true
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 31.7,
+      "score_band_plus_minus": 5.4,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 22.0,
+        "psychometric": 64.5,
+        "behavioral": 50.2
+      },
+      "confidence_multiplier": 0.7,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0889",
+    "business_metadata": {
+      "legal_name": "Joshi Krishi Supplier",
+      "owner_name": "Hari Tamang",
+      "location": "Butwal",
+      "business_type": "Agribusiness & Fertilizers",
+      "months_active": 2,
+      "segment": "New Merchant",
+      "data_maturity_discount_applied": 0.67
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0625,
+      "vouch_metrics": {
+        "vouches_given": 7,
+        "vouches_received": 8,
+        "trusted_anchor_vouched": false,
+        "new_vouches_last_30_days": 6,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 1
+      },
+      "network_relationships": {
+        "repeat_customers_count": 10,
+        "total_unique_customers_30d": 35,
+        "avg_visits_per_customer_month": 5.9,
+        "longest_relationship_months": 1,
+        "supplier_buyer_loop_detected": true,
+        "temporal_clustering_flag": true,
+        "calculated_customer_loyalty_score": 0.451
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": true,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": true,
+        "fraud_penalty_multiplier": 0.45,
+        "temporal_vouching_burst": true
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0471",
+        "MERCH-2026-1024",
+        "MERCH-2026-0283",
+        "MERCH-2026-0068"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 4.3,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 2.7,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 84,
+        "in_group_trust_radius": 75,
+        "time_discounting": 71,
+        "locus_of_control": 78
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 74,
+        "in_group_trust_radius": 70,
+        "time_discounting": 61,
+        "locus_of_control": 88
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stressed",
+      "historical_regime_transitions": [
+        "stable",
+        "stressed"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          2247581,
+          1267425,
+          2444043
+        ],
+        "monthly_debits_npr": [
+          2140111,
+          1330573,
+          2604522
+        ],
+        "net_cash_flow_npr": [
+          107470,
+          -63148,
+          -160479
+        ],
+        "coverage_ratio": [
+          1.05,
+          0.953,
+          0.938
+        ],
+        "consecutive_negative_months": 2,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 0,
+        "water_bill_consecutive_on_time_months": 1,
+        "airtime_topup_regularity_index": 0.36,
+        "days_to_payment_variance": 3.3,
+        "payment_delays_raw_3mo": [
+          12,
+          17,
+          20
+        ],
+        "cross_utility_correlation_stress": true
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 35.5,
+      "score_band_plus_minus": 5.6,
+      "score_status": "insufficient_data",
+      "lending_tier": "Tier 4 \u2014 Decline / Insufficient Data",
+      "component_scores": {
+        "social": 30.6,
+        "psychometric": 73.2,
+        "behavioral": 51.4
+      },
+      "confidence_multiplier": 0.67,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.60-0.85"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0068",
+    "business_metadata": {
+      "legal_name": "Joshi Photo Studio",
+      "owner_name": "Tenzing Shrestha",
+      "location": "Hetauda",
+      "business_type": "Seasonal Photography",
+      "months_active": 27,
+      "segment": "Cash Dominant",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0644,
+      "vouch_metrics": {
+        "vouches_given": 6,
+        "vouches_received": 10,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 7,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 7
+      },
+      "network_relationships": {
+        "repeat_customers_count": 11,
+        "total_unique_customers_30d": 72,
+        "avg_visits_per_customer_month": 5.7,
+        "longest_relationship_months": 21,
+        "supplier_buyer_loop_detected": true,
+        "temporal_clustering_flag": true,
+        "calculated_customer_loyalty_score": 0.551
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": true,
+        "fraud_penalty_multiplier": 0.6,
+        "temporal_vouching_burst": true
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-1024",
+        "MERCH-2026-0548",
+        "MERCH-2026-0102",
+        "MERCH-2026-0269"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 6.4,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 19.3,
+        "consistency_trap_failed": true
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 53,
+        "in_group_trust_radius": 60,
+        "time_discounting": 41,
+        "locus_of_control": 52
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 52,
+        "in_group_trust_radius": 60,
+        "time_discounting": 40,
+        "locus_of_control": 53
+      },
+      "llm_explanation": "Consistency trap triggered \u2014 reliability weight reduced."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": true,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          4040962,
+          205055,
+          4100245
+        ],
+        "monthly_debits_npr": [
+          3210092,
+          196354,
+          3417629
+        ],
+        "net_cash_flow_npr": [
+          830869,
+          8701,
+          682616
+        ],
+        "coverage_ratio": [
+          1.259,
+          1.044,
+          1.2
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 22,
+        "water_bill_consecutive_on_time_months": 11,
+        "airtime_topup_regularity_index": 0.97,
+        "days_to_payment_variance": 0.47,
+        "payment_delays_raw_3mo": [
+          4,
+          5,
+          5
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 63.3,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 2 \u2014 Micro Loan",
+      "component_scores": {
+        "social": 44.1,
+        "psychometric": 43.6,
+        "behavioral": 99.5
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [
+        "MERCH-2026-0214",
+        "MERCH-2026-0240",
+        "MERCH-2026-0400",
+        "MERCH-2026-0654",
+        "MERCH-2026-0713",
+        "MERCH-2026-0832",
+        "MERCH-2026-0884"
+      ],
+      "correlated_risk_flag": true
+    }
+  },
+  {
+    "merchant_id": "MERCH-2026-0097",
+    "business_metadata": {
+      "legal_name": "Shrestha Maha Bouddha Wholesalers",
+      "owner_name": "Rajesh Adhikari",
+      "location": "Butwal",
+      "business_type": "Electronics & Wholesale",
+      "months_active": 17,
+      "segment": "Digital Native",
+      "data_maturity_discount_applied": 1.0
+    },
+    "layer_1_social_graph": {
+      "node_type": "MERCHANT",
+      "pagerank_score": 0.0565,
+      "vouch_metrics": {
+        "vouches_given": 10,
+        "vouches_received": 11,
+        "trusted_anchor_vouched": true,
+        "new_vouches_last_30_days": 4,
+        "vouch_edge_weight": 1.0,
+        "vouch_age_months": 3
+      },
+      "network_relationships": {
+        "repeat_customers_count": 92,
+        "total_unique_customers_30d": 154,
+        "avg_visits_per_customer_month": 4.9,
+        "longest_relationship_months": 7,
+        "supplier_buyer_loop_detected": true,
+        "temporal_clustering_flag": true,
+        "calculated_customer_loyalty_score": 0.657
+      },
+      "fraud_ring_risk": {
+        "star_fraud_anchor_suspicious": false,
+        "thin_file_collusion": false,
+        "is_fraud_ring_participant": true,
+        "fraud_penalty_multiplier": 0.6,
+        "temporal_vouching_burst": true
+      },
+      "vouch_edges_to": [
+        "MERCH-2026-0619",
+        "MERCH-2026-0684",
+        "MERCH-2026-0295",
+        "MERCH-2026-0019"
+      ]
+    },
+    "layer_2_psychometric": {
+      "telemetry": {
+        "avg_response_time_seconds": 5.1,
+        "response_time_signal": "neutral",
+        "multi_session_score_drift_2w": 4.4,
+        "consistency_trap_failed": false
+      },
+      "deterministic_base_scores": {
+        "loss_aversion_asymmetry": 54,
+        "in_group_trust_radius": 45,
+        "time_discounting": 46,
+        "locus_of_control": 88
+      },
+      "llm_adjusted_scores": {
+        "loss_aversion_asymmetry": 46,
+        "in_group_trust_radius": 41,
+        "time_discounting": 38,
+        "locus_of_control": 96
+      },
+      "llm_explanation": "Automated pipeline constraint evaluation applied."
+    },
+    "layer_3_behavioral": {
+      "current_regime": "stable",
+      "historical_regime_transitions": [
+        "stable",
+        "stable"
+      ],
+      "seasonal_business_flag": false,
+      "financial_telemetry_3mo": {
+        "monthly_credits_npr": [
+          3996967,
+          2116300,
+          5257989
+        ],
+        "monthly_debits_npr": [
+          3507643,
+          1561547,
+          4361013
+        ],
+        "net_cash_flow_npr": [
+          489323,
+          554752,
+          896976
+        ],
+        "coverage_ratio": [
+          1.14,
+          1.355,
+          1.206
+        ],
+        "consecutive_negative_months": 0,
+        "festival_spike_normalized": true
+      },
+      "proxy_features": {
+        "nea_bill_consecutive_on_time_months": 10,
+        "water_bill_consecutive_on_time_months": 12,
+        "airtime_topup_regularity_index": 0.83,
+        "days_to_payment_variance": 2.36,
+        "payment_delays_raw_3mo": [
+          5,
+          0,
+          0
+        ],
+        "cross_utility_correlation_stress": false
+      }
+    },
+    "trust_score": {
+      "final_trust_score": 77.5,
+      "score_band_plus_minus": 3.0,
+      "score_status": "scored",
+      "lending_tier": "Tier 1 \u2014 Standard Loan",
+      "component_scores": {
+        "social": 42.9,
+        "psychometric": 55.2,
+        "behavioral": 93.3
+      },
+      "confidence_multiplier": 1.0,
+      "ml_label": {
+        "repayment_risk": "high",
+        "default_probability_band": "0.05-0.20"
+      }
+    },
+    "household_correlation": {
+      "same_household_merchants": [],
+      "correlated_risk_flag": false
+    }
+  }
+]

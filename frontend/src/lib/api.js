@@ -23,5 +23,6 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ merchant_id: id, psychometric_responses: responses || null })
     }),
-  mlScore: (id) => request(`/ml-score/${id}`)
+  mlScore: (id) => request(`/ml-score/${id}`),
+  getLatestScore: (id) => request(`/score/history/${id}`),
 }

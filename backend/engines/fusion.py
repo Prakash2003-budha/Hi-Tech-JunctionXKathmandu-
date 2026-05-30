@@ -1,21 +1,31 @@
 from typing import Dict
 
 
-def detect_segment(merchant: Dict, behavioral_data_points: int) -> str:
-    has_digital = merchant.get("esewa_registered") or merchant.get("khalti_registered")
+def detect_segment(merchant: Dict) -> str:
+    """Detect merchant segment from full merchant data (Phase 4 fix)."""
+    meta = merchant.get("business_metadata", {})
+    # Check segment from data first
+    seg = meta.get("segment", "").lower().replace(" ", "_")
+    if seg in ("digital_native", "cash_dominant", "new_merchant"):
+        return seg
+    # Fallback: infer from behavioral data
+    L3 = merchant.get("layer_3_behavioral", {})
+    proxy = L3.get("proxy_features", {})
+    behavioral_data_points = meta.get("months_active", 0)
+    has_digital = seg == "digital_native"
     has_khata = len(merchant.get("khata_entries", [])) > 0
     if has_digital and behavioral_data_points > 12:
         return "digital_native"
     elif has_khata and not has_digital:
-        return "cash_merchant"
+        return "cash_dominant"
     return "new_merchant"
 
 
 def get_segment_weights(segment: str) -> Dict[str, float]:
     weights = {
         "digital_native": {"social": 0.25, "psychometric": 0.20, "behavioral": 0.55},
-        "cash_merchant": {"social": 0.35, "psychometric": 0.30, "behavioral": 0.35},
-        "new_merchant": {"social": 0.45, "psychometric": 0.40, "behavioral": 0.15},
+        "cash_dominant":  {"social": 0.35, "psychometric": 0.30, "behavioral": 0.35},
+        "new_merchant":   {"social": 0.45, "psychometric": 0.40, "behavioral": 0.15},
     }
     return weights.get(segment, weights["new_merchant"])
 
@@ -36,41 +46,15 @@ def compute_confidence(
 def get_lending_tier(final_score: int, confidence: float) -> Dict:
     effective = final_score * confidence
     if effective >= 65:
-        return {
-            "tier": "A",
-            "label": "Full credit eligible",
-            "max_loan_npr": 50000,
-            "interest_rate": "12% per annum",
-            "color": "green",
-        }
+        return {"tier": "A", "label": "Full credit eligible", "max_loan_npr": 50000, "interest_rate": "12% per annum", "color": "green"}
     elif effective >= 45:
-        return {
-            "tier": "B",
-            "label": "Small loan eligible",
-            "max_loan_npr": 15000,
-            "interest_rate": "16% per annum",
-            "color": "amber",
-        }
+        return {"tier": "B", "label": "Small loan eligible", "max_loan_npr": 15000, "interest_rate": "16% per annum", "color": "amber"}
     elif effective >= 28:
-        return {
-            "tier": "C",
-            "label": "Building profile",
-            "max_loan_npr": 0,
-            "interest_rate": "N/A",
-            "color": "orange",
-        }
-    return {
-        "tier": "D",
-        "label": "Insufficient data",
-        "max_loan_npr": 0,
-        "interest_rate": "N/A",
-        "color": "red",
-    }
+        return {"tier": "C", "label": "Building profile", "max_loan_npr": 0, "interest_rate": "N/A", "color": "orange"}
+    return {"tier": "D", "label": "Insufficient data", "max_loan_npr": 0, "interest_rate": "N/A", "color": "red"}
 
 
-def generate_improvement_pathway(
-    tier, social_score, psychometric_score, behavioral_score, behavioral_sub
-) -> list:
+def generate_improvement_pathway(tier, social_score, psychometric_score, behavioral_score, behavioral_sub) -> list:
     steps = []
     if tier in ["C", "D"]:
         steps.append("Record at least 10 khata (ledger) entries via USSD *333#")
@@ -106,10 +90,12 @@ def fuse_scores(
         sources += 1
     if behavioral_result.get("sub_scores", {}).get("obligation_fulfillment", 0) > 0:
         sources += 1
-    segment = merchant["business_metadata"]["segment"]
-    if segment == "Digital Native":
+
+    # Phase 4 fix: use detect_segment() instead of reading raw string
+    segment = detect_segment(merchant)
+    if merchant["business_metadata"].get("segment", "") == "Digital Native":
         sources += 1
-    segment = merchant["business_metadata"]["segment"].lower().replace(" ", "_")
+
     weights = get_segment_weights(segment)
 
     raw_score = (
