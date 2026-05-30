@@ -105,8 +105,8 @@ def get_merchant(merchant_id: str):
 
 
 @app.get("/psychometric/questions")
-def psychometric_questions(lang: str = "ne"):
-    return get_questions(lang=lang)
+def psychometric_questions(merchant_id: str = None, lang: str = "ne"):
+    return get_questions(lang=lang, seed=merchant_id)
 
 
 @app.post("/score/{merchant_id}")

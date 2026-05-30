@@ -32,22 +32,23 @@ export default function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    Promise.all([api.getMerchants(), api.getQuestions()])
-      .then(([ms, qs]) => {
+    api
+      .getMerchants()
+      .then((ms) => {
         setMerchants(ms);
-        setQuestions(qs);
         if (ms.length > 0) setSelectedId(ms[0].merchant_id);
       })
-      .catch((e) => setError("Cannot reach API — start the backend first."));
+      .catch(() => setError("Cannot reach API — start the backend first."));
   }, []);
 
   useEffect(() => {
     if (!selectedId) return;
-    api
-      .getMerchant(selectedId)
-      .then(setSelectedMerchant)
+    Promise.all([api.getMerchant(selectedId), api.getQuestions(selectedId)])
+      .then(([m, qs]) => {
+        setSelectedMerchant(m);
+        setQuestions(qs);
+      })
       .catch(() => {});
-    // Reset psychometric when merchant changes
     setPsychResponses(null);
     setPsychSubmitted(false);
   }, [selectedId]);

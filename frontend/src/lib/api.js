@@ -15,7 +15,7 @@ async function request(path, opts = {}) {
 export const api = {
   getMerchants: () => request('/merchants'),
   getMerchant: (id) => request(`/merchants/${id}`),
-  getQuestions: () => request('/psychometric/questions'),
+  getQuestions: (merchantId) => request(`/psychometric/questions?merchant_id=${merchantId}`),
   getGraphStats: () => request('/graph/stats'),
   getGraphNeighbors: (id) => request(`/graph/neighbors/${id}`),
   computeScore: (id, responses) =>
